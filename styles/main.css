@@ -2,7 +2,7 @@
 body {
     font-family: 'Benne', serif;
     line-height: 1.8;
-    font-weight: 400;
+    font-weight: 500; /* Slightly bolder if available */
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -20,7 +20,8 @@ h1 {
 }
 
 h2 {
-    margin: 20px;
+    margin-top: 20px;  /* Only adjusting top margin */
+    margin-bottom: 15px; /* Adding some bottom space */
     color: #1a1a1a;
     font-weight: normal;
     font-size: 1.5em;
