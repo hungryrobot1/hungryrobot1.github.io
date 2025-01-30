@@ -1,0 +1,54 @@
+/* Base styles */
+body {
+    font-family: 'Benne', serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+    font-size: 18px; /* Slightly larger for better readability with Benne */
+}
+
+/* Typography */
+h1 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    font-weight: normal; /* Old-style fonts often look better without heavy weights */
+}
+
+h2 {
+    margin-top: 30px;
+    color: #444;
+    font-weight: normal;
+}
+
+/* Layout */
+.section {
+    margin: 20px 0;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #004999;
+}
+
+.project-link, 
+.writing-link {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+        font-size: 16px; /* Slightly smaller for mobile */
+    }
+}
