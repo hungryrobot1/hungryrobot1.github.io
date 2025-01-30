@@ -1,13 +1,13 @@
 /* Base styles */
 body {
     font-family: 'Benne', serif;
-    line-height: 1.8; /* Increased for better readability */
+    line-height: 1.8;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    color: #1a1a1a; /* Slightly softer than pure black */
-    font-size: 20px; /* Increased base font size */
-    background-color: #faf8f3; /* Warm off-white color */
+    color: #1a1a1a;
+    font-size: 20px;
+    background-color: #faf8f3;
 }
 
 /* Typography */
@@ -15,7 +15,7 @@ h1 {
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
     font-weight: normal;
-    font-size: 2em; /* Relative to base font size */
+    font-size: 2em;
 }
 
 h2 {
@@ -27,19 +27,23 @@ h2 {
 
 /* Layout */
 .section {
-    margin: 30px 0; /* Increased spacing between sections */
+    margin: 30px 0;
 }
 
-/* Links */
-a {
-    color: #1a1a1a; /* Same as text color */
+/* Links - More specific selectors to override defaults */
+a,
+a:link,
+a:visited {
+    color: #1a1a1a !important; /* Using !important as a last resort */
     text-decoration: underline;
-    text-underline-offset: 2px; /* Space between text and underline */
+    text-underline-offset: 2px;
     transition: opacity 0.2s ease;
 }
 
-a:hover {
-    opacity: 0.7; /* Subtle dimming effect on hover */
+a:hover,
+a:active {
+    opacity: 0.7;
+    text-decoration: underline;
 }
 
 .project-link, 
@@ -52,7 +56,7 @@ a:hover {
 @media (max-width: 600px) {
     body {
         padding: 15px;
-        font-size: 18px; /* Still larger than original but adjusted for mobile */
+        font-size: 18px;
     }
     
     h1 {
