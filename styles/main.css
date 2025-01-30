@@ -30,20 +30,16 @@ h2 {
     margin: 30px 0;
 }
 
-/* Links - More specific selectors to override defaults */
-a,
-a:link,
-a:visited {
-    color: #1a1a1a !important; /* Using !important as a last resort */
+/* Links */
+a {
+    color: inherit;
     text-decoration: underline;
     text-underline-offset: 2px;
     transition: opacity 0.2s ease;
 }
 
-a:hover,
-a:active {
+a:hover {
     opacity: 0.7;
-    text-decoration: underline;
 }
 
 .project-link, 
