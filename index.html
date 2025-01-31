@@ -23,11 +23,27 @@ title: Home
 
     <section class="section">
         <h2>Essays</h2>
-        <p>Philosophical explorations and thoughts on AI development...</p>
+        {% if site.essays.size > 0 %}
+            {% for essay in site.essays %}
+                <a href="{{ essay.url }}" class="writing-link">
+                    {{ essay.title }}
+                </a>
+            {% endfor %}
+        {% else %}
+            <p>Philosophical explorations and thoughts on AI development...</p>
+        {% endif %}
     </section>
 
     <section class="section">
         <h2>Research</h2>
-        <p>Forthcoming case studies and experimental results...</p>
+        {% if site.research.size > 0 %}
+            {% for study in site.research %}
+                <a href="{{ study.url }}" class="writing-link">
+                    {{ study.title }}
+                </a>
+            {% endfor %}
+        {% else %}
+            <p>Forthcoming case studies and experimental results...</p>
+        {% endif %}
     </section>
 </main>

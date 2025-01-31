@@ -4,6 +4,15 @@ description: Personal website and research archive
 baseurl: "" # Leave empty for GitHub Pages
 url: "https://hungryrobot1.github.io"
 
+# Collections
+collections:
+  essays:
+    output: true
+    permalink: /essays/:title/
+  research:
+    output: true
+    permalink: /research/:title/
+
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title/
