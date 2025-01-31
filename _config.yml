@@ -1,0 +1,18 @@
+# Site settings
+title: HungryRobot
+description: Personal website and research archive
+baseurl: "" # Leave empty for GitHub Pages
+url: "https://hungryrobot1.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
